@@ -4,7 +4,7 @@ const path = require('path')
 const routes = require('./app/routes/routes')
 
 //settings
-app.set('port', 2001 || process.env.PORT)//set de puerto
+app.set('port', 8001 || process.env.PORT)//set de puerto
 const puerto = app.get('port')
 app.set('views', path.join(__dirname, './app/views'))//set de vistas
 //set de renderizado y motor

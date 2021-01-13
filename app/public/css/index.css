@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.surface_book_login {
+    /* Surface Book - login */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.pag {
+    /* pag */
+    /*fija la imagen fuera del scroll*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /*centrar elementos*/
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    /*BACKGROUND---------*/
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #2193b0), url(../../assets/img/bg_9980.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #2193b0), url(../../assets/img/equipo-de-trabajo-1080x675.jpg);*/
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url(../../assets/img/equipo-de-trabajo-1080x675.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#modal_inicioSesion {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+#modal_registroUsuSesion {
+    display: none;
+    background: rgba(205, 205, 255, 0.9);
+}
+
+.form_login {
+    /* form_login */
+    position: relative;
+    width: 600px;
+    height: 95%;
+    top: 5%;
+    /*centrar verticalmente*/
+    align-items: center;
+    justify-content: center;
+    /*poner uno bajo el otro*/
+    flex-direction: column;
+    text-align: center;
+}
+
+.form_login #logo {
+    /*img_logo */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 80px;
+    background: url(../../assets/ico/logo/Logo_integral-riesgo-asesores-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+    z-index: 100;
+}
+
+.form_login #slogan {
+    /* img_slogan */
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    top: 180px;
+    background: url(../../assets/ico/logo/Logo_integral-riesgo-asesores-slogan.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+}
+
+.form_login form {
+    /* form */
+    z-index: 101;
+    position: absolute;
+    top: 100px;
+    margin: auto;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_login form input {
+    /* form */
+    height: 45px;
+}
+
+.form_login form input[type=password] {
+    font-size: 150%x;
+}
+
+.form_login .menu_sesion {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 100%;
+}
+
+.form_login .menu_sesion .layout_vertical {
+    margin: 0;
+    padding: 0;
+}
+
+.form_login .menu_sesion .layout_vertical .tittle_sesion {}
+
+.form_login .menu_sesion .layout_vertical .layout_horizontal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form_login .menu_sesion .layout_vertical .layout_horizontal .btn_ir_registrate, .form_login .menu_sesion .layout_vertical .layout_horizontal .btn_salir {
+    display: block;
+    align-self: auto;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.form_login .menu_sesion .layout_vertical .layout_horizontal .btn_ir_registrate img, .form_login .menu_sesion .layout_vertical .layout_horizontal .btn_salir img {
+    position: relative;
+    top: -25px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_fade_ {
+    display: none;
+}
+
+/*max ancho permitido 213px*/
+
+@media (max-width:700PX) {
+    .pag {
+        /*2193b0*/
+        background: linear-gradient(to right, hsla(216, 78%, 68%, 0.5), #EFE), url(../../assets/img/decreto1072-1.jpg);
+    }
+    .form_login {
+        background-color: transparent;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .form_login:hover {
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: px;
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(121, 121, 121, 0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    .form_login #logo {
+        width: 90px;
+        height: 90px;
+        top: 105px;
+    }
+    .form_login #slogan {
+        width: 200px;
+        height: 50px;
+        top: 200px;
+    }
+    .form_login form label {
+        color: #343;
+    }
+    .form_login form input {
+        color: #FFF;
+    }
+}

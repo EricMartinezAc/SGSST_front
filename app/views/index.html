@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.html') %>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/accesorios.css">
+        <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+</head>
+
+<body class="surface_book_login">
+    <!--accesorios-->
+    <%- include('./partials/progressBar.html') %>
+        <%- include('./partials/subWind_alert_conexWS_cant.html') %>
+            <%- include('./partials/subWind_alert_auth_cant.html') %>
+                <%- include('./partials/subWind_alert_auth_success.html') %>
+                    <main class="pag">
+                        <!--inicio sesion-->
+                        <%- include('./partials/modal_login.html') %>
+                            <!--Registro-->
+                            <%- include('./partials/modal_registrer.html') %>
+                    </main>
+
+                    <%- include('partials/foot.html') %>
+
+</body>
+
+</html>

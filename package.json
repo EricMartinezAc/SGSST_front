@@ -1,0 +1,38 @@
+{
+  "name": "sgsst_front",
+  "version": "1.0.0",
+  "description": "frontend para software de sistema de gestion para seguridad y salud en el trabajo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricMartinezAc/SGSST_front.git"
+  },
+  "keywords": [
+    "sgsst",
+    "integral",
+    "riesgos",
+    "asesores",
+    "nodejs",
+    "phva"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricMartinezAc/SGSST_front/issues"
+  },
+  "homepage": "https://github.com/EricMartinezAc/SGSST_front#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

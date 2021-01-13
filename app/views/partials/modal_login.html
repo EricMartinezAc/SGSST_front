@@ -1,0 +1,36 @@
+<div id="modal_inicioSesion" class="form_login">
+    <div class="menu_sesion">
+        <div class="layout_vertical">
+            <div class="tittle_sesion">
+                <h3>INICIO DE SESIÓN</h3>
+            </div>
+            <ul class="layout_horizontal">
+                <li>
+                    <div class="btn_ir_registrate">
+                        <img src="/assets/ico/resources/icono_registrarUsuario.png" alt="" srcset="" onclick="mostar_modal(document.getElementById('modal_registroUsuSesion'),
+                            document.getElementById('modal_inicioSesion'))">
+                    </div>
+                </li>
+                <li>
+                    <div class="btn_salir">
+                        <img src="/assets/ico/resources/icono_salir.png" alt="" srcset="" onclick="salir_login()">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="logo"></div>
+    <div id="slogan"></div>
+    <form>
+        <label for="UsuarioLogin">Usuario</label>
+        <!--input type="text" pattern="[0-9]" maxlength="10" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" id="UsuarioLogin" name="UsuarioLogin" value=""-->
+        <input type="text" maxlength="10" id="UsuarioLogin" name="UsuarioLogin" value="">
+        <label for="pswLogin">Contraseña de usuario</label>
+        <input type="password" maxlength="10" name="pswLogin" id="pswLogin">
+        <input onclick="login(
+            document.getElementById('UsuarioLogin').value,
+            document.getElementById('pswLogin').value
+        )" type="button" value="Continuar">
+        <div class="line"></div>
+    </form>
+</div>

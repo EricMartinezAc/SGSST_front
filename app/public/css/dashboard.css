@@ -1,0 +1,15 @@
+.slidebar-slogan {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.slidebar-slogan img {
+    width: 80%;
+    height: 20%;
+}
+
+.content-wrapper{
+    scroll-behavior: smooth;
+}
+
+@media (max-width:800PX) {}

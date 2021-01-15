@@ -11,7 +11,7 @@ const login = (datoUsu, psw) => {
     if (ResultVal.length >= 1) {
 
         //crear websocket:
-        let ws = new WebSocket('ws://localhost:8002')
+        let ws = new WebSocket('ws://localhost:1992')
 
         //en conexión de websocket, enviar datos:
         ws.onopen = function (e) {
